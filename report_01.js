@@ -66,3 +66,5 @@ console.log(typeof(null));
 //
 console.log(11); // hiển thị màu xanh
 console.log("ngỗng"); // hiển thị màu đen
+
+// vòng for(let i =0;i<n;i++) là nhanh nhất
