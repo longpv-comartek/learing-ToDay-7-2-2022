@@ -12,7 +12,7 @@ function myFuc() {
 
     return e === c
 }
-// console.log(myFuc());
+console.log("fix floating point", myFuc());
 
 // so sánh 2 obj
 // Hàm kiểm tra một giá trị là object
@@ -54,17 +54,56 @@ function isDeepEqual(obj1, obj2) {
 let point1 = { x: 1, y: 2, metadata: { type: "point" } };
 let point2 = { x: 1, y: 2, metadata: { type: "point" } };
 
-console.log(isDeepEqual(point1, point2));
+console.log("so sánh 2 object ", isDeepEqual(point1, point2));
 
-console.log(typeof(null));
 
 // null khác undefined
-// null là có khai báo nhưng để trống giá trị(có chủ đích) còn undefined là có khai báo nhưng không gán giá trị(do chủ quan), type of null là 1 object,
-//instanceof và type of :instanceof thì nó sẽ kiểm tra xem đối tượng khởi tạo có trong prototype của đối tượng khởi tạo không còn  type of sẽ trả về kiểu đã định nghĩa sẵn
+// null là có khai báo nhưng để trống giá trị(có chủ đích) còn undefined là có khai báo nhưng không gán giá trị(do chủ quan),
+// type of null là 1 object,
+console.log(typeof(null));
+//instanceof và type of :Toán tử instanceof được sử dụng để kiểm tra một đối tượng nào đó có phải là một đối tượng của một lớp được chỉ định hay không.
+//  type of sẽ trả về kiểu đã định nghĩa sẵn
+
 // tìm hiểu các kiểu so sánh trong javascript
 
 //
 console.log(11); // hiển thị màu xanh
 console.log("ngỗng"); // hiển thị màu đen
 
-// vòng for(let i =0;i<n;i++) là nhanh nhất
+// vòng for(let i =0;i<n;i++) là nhanh nhất(đầu giờ em có nói cho anh nghe)
+
+function C() {}
+
+function D() {}
+
+let o = new C()
+
+// true, 
+console.log(o instanceof C);
+
+// false, 
+console.log(o instanceof D);
+
+// so sánh == và ===
+
+console.log("==", 3 == "3");
+
+console.log("===", 3 === "3");
+//++  number và number ++
+var number = 1
+console.log(++number, number);
+
+var number = 1
+
+console.log(number++, number);
+
+//scope
+//var :có thể khai báo lại
+var i = 1;
+var i = 2;
+var obj = {
+    name: "string"
+}
+console.log(typeof JSON.stringify(obj))
+
+//let : chỉ có thể cập nhật lại giá trị và phạm vi là local

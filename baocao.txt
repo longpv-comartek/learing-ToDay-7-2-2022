@@ -1,6 +1,0 @@
-hôm nay em đã tìm hiểu so sánh 2 object 
-tìm hiểu hàm for (reverse) là hàm nh , 
-cài đặt thành công subsystem , nodejs -14 , quokka.js  
-đọc hiểu fix floating point ,== và ===, 
-tìm hiểu null và undefined
-tìm hiểu type of và instanceof
