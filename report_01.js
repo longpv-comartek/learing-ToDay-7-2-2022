@@ -8,12 +8,12 @@ function myFuc() {
 
     const d = a + b
 
-    const e = +d.toFixed(2)
-
+    const e = d.toFixed(2)
+    console.log(typeof d, typeof e);
     return e === c
 }
 
-console.log("fix floating point", myFuc());
+console.log("fix floating point", myFuc(), );
 
 // so sánh 2 obj
 // Hàm kiểm tra một giá trị là object
